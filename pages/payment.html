@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Payment — China Travel Guide</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f8fa; color: #2c3e50; }
+  .layout { display: flex; min-height: 100vh; }
+  .sidebar { width: 240px; min-width: 240px; background: #fff; border-right: 1px solid #e8eaed; padding: 20px 0; position: sticky; top: 0; height: 100vh; overflow-y: auto; }
+  .sidebar-title { font-size: 13px; font-weight: 600; color: #888; text-transform: uppercase; letter-spacing: 0.5px; padding: 0 16px 12px; }
+  .sidebar a { display: flex; align-items: center; gap: 8px; padding: 8px 16px; color: #444; text-decoration: none; font-size: 14px; border-radius: 6px; margin: 1px 8px; transition: background 0.15s; }
+  .sidebar a:hover { background: #f0f4ff; color: #1a6cf0; }
+  .sidebar a.active { background: #e8f0fe; color: #1a6cf0; font-weight: 500; }
+  .main { flex: 1; max-width: 860px; padding: 48px 48px 80px; }
+  .page-header { margin-bottom: 32px; }
+  .page-header h1 { font-size: 28px; font-weight: 700; color: #1a1a2e; margin-bottom: 8px; }
+  .page-header .subtitle { font-size: 14px; color: #888; }
+  .page-img { width: 100%; border-radius: 12px; margin-bottom: 32px; box-shadow: 0 4px 20px rgba(0,0,0,0.10); display: block; }
+  .hint { background: #fff3cd; border: 1px solid #ffc107; border-radius: 8px; padding: 12px 16px; font-size: 14px; color: #856404; margin-bottom: 28px; }
+  .faq-item { background: #fff; border-radius: 10px; margin-bottom: 12px; box-shadow: 0 1px 6px rgba(0,0,0,0.06); overflow: hidden; }
+  .faq-question { display: flex; align-items: center; gap: 10px; padding: 16px 20px; cursor: pointer; font-size: 15px; font-weight: 500; color: #1a1a2e; user-select: none; list-style: none; }
+  .faq-question::after { content: '▶'; margin-left: auto; font-size: 11px; color: #aaa; transition: transform 0.2s; }
+  details[open] > .faq-question::after { transform: rotate(90deg); }
+  .faq-answer { padding: 0 20px 20px 48px; font-size: 14px; line-height: 1.8; color: #444; }
+  .faq-answer p { margin-bottom: 10px; }
+  .faq-answer ul, .faq-answer ol { padding-left: 20px; margin-bottom: 10px; }
+  .faq-answer li { margin-bottom: 6px; }
+  .faq-answer strong { color: #1a1a2e; }
+  .note-box { background: #e8f4fd; border-left: 4px solid #1a6cf0; border-radius: 6px; padding: 12px 16px; font-size: 14px; color: #444; margin: 12px 0; }
+  .back-link { display: inline-flex; align-items: center; gap: 6px; color: #1a6cf0; text-decoration: none; font-size: 14px; margin-top: 40px; font-weight: 500; }
+  .back-link:hover { text-decoration: underline; }
+  @media (max-width: 768px) { .sidebar { display: none; } .main { padding: 24px 20px 60px; } }
+</style>
+</head>
+<body>
+<div class="layout">
+  <nav class="sidebar">
+    <div class="sidebar-title">Pages</div>
+    <a href="../index.html">🗺️ China Travel Guide</a>
+    <a href="policy.html">💡 Policy</a>
+    <a href="payment.html" class="active">💰 Payment</a>
+    <a href="accommodation.html">🏨 Accommodation</a>
+    <a href="transportation.html">🚅 Transportation System</a>
+    <a href="scenic.html">🏞️ Scenic spots</a>
+    <a href="others.html">🔍 Others</a>
+  </nav>
+
+  <main class="main">
+    <div class="page-header">
+      <h1>💰 Payment</h1>
+      <div class="subtitle">Mobile payment, currency exchange &amp; banking tips</div>
+    </div>
+
+    <img class="page-img" src="../images/payment_methods.png" alt="Payment Methods in China">
+
+    <div class="hint">Click the ▶ button to show the answer</div>
+
+    <details class="faq-item">
+      <summary class="faq-question">💳 What are the commonly used payment methods in China?</summary>
+      <div class="faq-answer">
+        <p>Bank card, mobile payment, cash, bank account, and e-CNY.</p>
+        <ul>
+          <li><strong>Mobile Payment:</strong> Weixin Pay (WeChat Pay), Alipay, UnionPay</li>
+          <li><strong>Card:</strong> Major international cards (Visa, Mastercard, JCB, etc.)</li>
+          <li><strong>Cash:</strong> RMB (Chinese Yuan)</li>
+          <li><strong>e-CNY:</strong> Digital currency issued by the People's Bank of China</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary class="faq-question">📱 How to use electronic mobile payment?</summary>
+      <div class="faq-answer">
+        <p>You can enjoy convenient payment services with just a mobile phone. Mobile payment services such as Weixin Pay, Alipay and UnionPay are available. For better payment experiences, no ID information is required for transactions under a certain amount.</p>
+        <ul>
+          <li><strong>Weixin Pay (WeChat Pay):</strong> Download WeChat, bind an international bank card or prepaid card, scan QR codes to pay.</li>
+          <li><strong>Alipay:</strong> Download Alipay, bind an international bank card, use the international version designed for overseas visitors.</li>
+          <li><strong>UnionPay:</strong> Many ATMs and merchants accept UnionPay international cards.</li>
+          <li><strong>Tour Card:</strong> Prepaid travel card available at major airports and banks.</li>
+          <li><strong>e-CNY:</strong> Download the e-CNY app; can be used without a bank account for small transactions.</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary class="faq-question">💴 How to exchange currency in China?</summary>
+      <div class="faq-answer">
+        <p><strong>(1)</strong> Overseas visitors to China can exchange foreign currencies for RMB cash in advance in relevant countries or regions before bringing it into China (each visitor is allowed to take up to RMB 20,000 in cash in or out of the country).</p>
+        <p><strong>(2)</strong> Overseas visitors to China can exchange foreign currencies for RMB cash at:</p>
+        <ul>
+          <li>Commercial bank branches</li>
+          <li>Money changers</li>
+          <li>Self-service currency exchange machines at international airports and ports</li>
+          <li>ATMs using international bank cards</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary class="faq-question">🗳️ Do you need to pay for tips and taxes separately?</summary>
+      <div class="faq-answer">
+        <p><strong>No Tips</strong> — Tipping is not expected in China, as most services include the cost in your bill. This practice keeps transactions simple and predictable. In restaurants, taxis, and hotels, you won't need to pay more than what your bill states. Instead of a tip, a polite thank you or a smile is greatly appreciated.</p>
+        <p><strong>Taxes</strong> — Whether you need to pay taxes when coming to China depends on your specific circumstances.</p>
+        <ul>
+          <li>If you obtain income in China and meet the tax payment conditions stipulated by Chinese tax laws, you need to pay taxes.</li>
+          <li>For short-term tourism or visits without taxable income, you usually do not need to pay taxes.</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary class="faq-question">👛 Can foreigners get tax refunds when shopping in China?</summary>
+      <div class="faq-answer">
+        <p>Yes! China offers a departure tax refund program for eligible foreign visitors.</p>
+        <ul>
+          <li><strong>Eligible people:</strong> Overseas visitors (foreigners, Hong Kong, Macau, Taiwan residents)</li>
+          <li><strong>Tax refund requirements:</strong> Minimum purchase amount applies; goods must be purchased at designated Tax Refund shops</li>
+          <li><strong>Tax refund rate:</strong> Typically 11% VAT, with an ~8.7% net refund after fees</li>
+          <li><strong>Goods:</strong> Physical goods purchased at participating stores</li>
+          <li><strong>Process:</strong> Get refund form → Customs verification → Departure Tax Refund counter</li>
+        </ul>
+        <div class="note-box">
+          💡 <strong>Tips:</strong> The currency used for tax refund is RMB. If the refund amount does not exceed RMB 10,000, you can choose cash refund or bank transfer. Amounts over RMB 10,000 must be transferred to your bank account.
+        </div>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary class="faq-question">💳 Is it convenient to use foreign bank cards to pay in China?</summary>
+      <div class="faq-answer">
+        <ol>
+          <li>Download and install WeChat or Alipay, then input your mobile phone number for registration.</li>
+          <li>Bind the app with international bank cards bearing Mastercard, Visa, JCB, Diners Club, or Discover logos.</li>
+          <li>Scan the collection QR code or show your payment QR code when making payments.</li>
+        </ol>
+        <div class="note-box">
+          <strong>Notes for binding international bank cards:</strong>
+          <ul>
+            <li>Some issuing banks may reject the binding request — contact your bank's customer service if this happens.</li>
+            <li>No service fee for transactions under RMB 200; 3% fee for amounts over RMB 200.</li>
+            <li>Annual limit: USD 50,000; single transaction limit: USD 5,000.</li>
+          </ul>
+        </div>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary class="faq-question">💰 How to ensure the security of electronic payments?</summary>
+      <div class="faq-answer">
+        <p>Keep your bank cards secure to avoid loss or unauthorized use. In case of card loss, please report it to the corresponding bank immediately. Additional tips:</p>
+        <ul>
+          <li>Use official apps from trusted app stores only</li>
+          <li>Enable biometric authentication (fingerprint/face ID) for payment apps</li>
+          <li>Avoid using public Wi-Fi for financial transactions</li>
+          <li>Keep your payment QR code private — only show it when making a purchase</li>
+        </ul>
+      </div>
+    </details>
+
+    <a class="back-link" href="../index.html">👉 Go back to China Travel Guide</a>
+  </main>
+</div>
+</body>
+</html>

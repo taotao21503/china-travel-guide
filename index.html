@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>China Travel Guide</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f8fa; color: #2c3e50; }
+
+  .layout { display: flex; min-height: 100vh; }
+
+  /* Sidebar */
+  .sidebar {
+    width: 240px; min-width: 240px; background: #fff; border-right: 1px solid #e8eaed;
+    padding: 20px 0; position: sticky; top: 0; height: 100vh; overflow-y: auto;
+  }
+  .sidebar-title {
+    font-size: 13px; font-weight: 600; color: #888; text-transform: uppercase;
+    letter-spacing: 0.5px; padding: 0 16px 12px;
+  }
+  .sidebar a {
+    display: flex; align-items: center; gap: 8px; padding: 8px 16px;
+    color: #444; text-decoration: none; font-size: 14px; border-radius: 6px;
+    margin: 1px 8px; transition: background 0.15s;
+  }
+  .sidebar a:hover { background: #f0f4ff; color: #1a6cf0; }
+  .sidebar a.active { background: #e8f0fe; color: #1a6cf0; font-weight: 500; }
+
+  /* Main content */
+  .main { flex: 1; max-width: 860px; padding: 48px 48px 80px; }
+
+  /* Hero */
+  .hero { border-radius: 16px; overflow: hidden; margin-bottom: 40px; box-shadow: 0 4px 24px rgba(0,0,0,0.10); }
+  .hero img { width: 100%; display: block; }
+  .hero-overlay {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    padding: 36px 40px;
+  }
+  .hero-overlay h1 { font-size: 32px; font-weight: 700; color: #fff; margin-bottom: 12px; }
+  .hero-overlay p { font-size: 15px; color: rgba(255,255,255,0.82); line-height: 1.7; max-width: 620px; }
+
+  /* Section cards */
+  h2.section-heading {
+    font-size: 20px; font-weight: 600; color: #1a1a2e;
+    margin: 40px 0 20px; padding-bottom: 10px;
+    border-bottom: 2px solid #e8eaed;
+  }
+  .card-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+  .card {
+    background: #fff; border-radius: 12px; overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07); text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .card:hover { transform: translateY(-3px); box-shadow: 0 6px 24px rgba(0,0,0,0.12); }
+  .card img { width: 100%; height: 160px; object-fit: cover; display: block; }
+  .card-body { padding: 16px 20px 20px; }
+  .card-body h3 { font-size: 16px; font-weight: 600; color: #1a1a2e; margin-bottom: 6px; }
+  .card-body p { font-size: 13px; color: #666; line-height: 1.5; }
+  .card-arrow { float: right; color: #1a6cf0; font-size: 18px; }
+
+  /* Footer */
+  .footer {
+    margin-top: 60px; padding-top: 24px; border-top: 1px solid #e8eaed;
+    font-size: 12px; color: #999; line-height: 1.6;
+  }
+
+  @media (max-width: 768px) {
+    .sidebar { display: none; }
+    .main { padding: 24px 20px 60px; }
+    .card-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="layout">
+  <nav class="sidebar">
+    <div class="sidebar-title">Pages</div>
+    <a href="index.html" class="active">🗺️ China Travel Guide</a>
+    <a href="pages/policy.html">💡 Policy</a>
+    <a href="pages/payment.html">💰 Payment</a>
+    <a href="pages/accommodation.html">🏨 Accommodation</a>
+    <a href="pages/transportation.html">🚅 Transportation System</a>
+    <a href="pages/scenic.html">🏞️ Scenic spots</a>
+    <a href="pages/others.html">🔍 Others</a>
+  </nav>
+
+  <main class="main">
+    <div class="hero">
+      <img src="images/main_banner.jpeg" alt="China Travel Guide Banner">
+      <div class="hero-overlay">
+        <h1>China Travel Guide</h1>
+        <p>On December 17, 2024, China announced a significant relaxation of its visa-free transit policy, with the aim of further boosting international openness and fostering people-to-people exchanges. The permitted stay for eligible foreign travelers has been extended from the previous 72 and 144 hours to <strong>240 hours</strong>, equivalent to 10 days.</p>
+      </div>
+    </div>
+
+    <h2 class="section-heading">👇 China Travel Guide Content</h2>
+
+    <div class="card-grid">
+      <a class="card" href="pages/policy.html">
+        <img src="images/main_policy_thumb.png" alt="Policy">
+        <div class="card-body">
+          <h3>💡 Policy <span class="card-arrow">→</span></h3>
+          <p>Visa-free transit, entry requirements, tourist visa, ports of entry &amp; more.</p>
+        </div>
+      </a>
+      <a class="card" href="pages/payment.html">
+        <img src="images/main_payment_thumb.png" alt="Payment">
+        <div class="card-body">
+          <h3>💰 Payment <span class="card-arrow">→</span></h3>
+          <p>Mobile payment, currency exchange, tax refunds &amp; bank card tips.</p>
+        </div>
+      </a>
+      <a class="card" href="pages/accommodation.html">
+        <img src="images/main_accommodation_thumb.png" alt="Accommodation">
+        <div class="card-body">
+          <h3>🏨 Accommodation <span class="card-arrow">→</span></h3>
+          <p>How to choose a hotel, rates, booking options &amp; check-in guide.</p>
+        </div>
+      </a>
+      <a class="card" href="pages/transportation.html">
+        <img src="images/main_transport_thumb.png" alt="Transportation">
+        <div class="card-body">
+          <h3>🚅 Transportation System <span class="card-arrow">→</span></h3>
+          <p>Trains, flights, metro, ride-hailing, shared bikes &amp; maps.</p>
+        </div>
+      </a>
+      <a class="card" href="pages/scenic.html">
+        <img src="images/main_scenic_thumb.png" alt="Scenic Spots">
+        <div class="card-body">
+          <h3>🏞️ Scenic spots <span class="card-arrow">→</span></h3>
+          <p>How to book tickets online, advance booking tips &amp; entry procedures.</p>
+        </div>
+      </a>
+      <a class="card" href="pages/others.html">
+        <img src="images/main_others_thumb.png" alt="Others">
+        <div class="card-body">
+          <h3>🔍 Others <span class="card-arrow">→</span></h3>
+          <p>Language, Wi-Fi, power plugs, local culture, public holidays &amp; emergency numbers.</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="footer">
+      <p>📝 Presented by China Daily Website. Certain images and text have been sourced from the internet. If there are any copyright concerns, please reach out for prompt removal.</p>
+    </div>
+  </main>
+</div>
+</body>
+</html>

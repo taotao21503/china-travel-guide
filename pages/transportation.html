@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Transportation System — China Travel Guide</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f8fa; color: #2c3e50; }
+  .layout { display: flex; min-height: 100vh; }
+  .sidebar { width: 240px; min-width: 240px; background: #fff; border-right: 1px solid #e8eaed; padding: 20px 0; position: sticky; top: 0; height: 100vh; overflow-y: auto; }
+  .sidebar-title { font-size: 13px; font-weight: 600; color: #888; text-transform: uppercase; letter-spacing: 0.5px; padding: 0 16px 12px; }
+  .sidebar a { display: flex; align-items: center; gap: 8px; padding: 8px 16px; color: #444; text-decoration: none; font-size: 14px; border-radius: 6px; margin: 1px 8px; transition: background 0.15s; }
+  .sidebar a:hover { background: #f0f4ff; color: #1a6cf0; }
+  .sidebar a.active { background: #e8f0fe; color: #1a6cf0; font-weight: 500; }
+  .main { flex: 1; max-width: 860px; padding: 48px 48px 80px; }
+  .page-header { margin-bottom: 32px; }
+  .page-header h1 { font-size: 28px; font-weight: 700; color: #1a1a2e; margin-bottom: 8px; }
+  .page-header .subtitle { font-size: 14px; color: #888; }
+  .hint { background: #fff3cd; border: 1px solid #ffc107; border-radius: 8px; padding: 12px 16px; font-size: 14px; color: #856404; margin-bottom: 28px; }
+  .faq-item { background: #fff; border-radius: 10px; margin-bottom: 12px; box-shadow: 0 1px 6px rgba(0,0,0,0.06); overflow: hidden; }
+  .faq-question { display: flex; align-items: center; gap: 10px; padding: 16px 20px; cursor: pointer; font-size: 15px; font-weight: 500; color: #1a1a2e; user-select: none; list-style: none; }
+  .faq-question::after { content: '▶'; margin-left: auto; font-size: 11px; color: #aaa; transition: transform 0.2s; }
+  details[open] > .faq-question::after { transform: rotate(90deg); }
+  .faq-answer { padding: 0 20px 20px 48px; font-size: 14px; line-height: 1.8; color: #444; }
+  .faq-answer p { margin-bottom: 10px; }
+  .faq-answer ul, .faq-answer ol { padding-left: 20px; margin-bottom: 10px; }
+  .faq-answer li { margin-bottom: 6px; }
+  .faq-answer strong { color: #1a1a2e; }
+  .img-banner { width: 100%; border-radius: 10px; margin: 16px 0; box-shadow: 0 2px 12px rgba(0,0,0,0.08); display: block; }
+  .img-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 16px 0; }
+  .img-row img { width: 100%; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); }
+  .note-box { background: #e8f4fd; border-left: 4px solid #1a6cf0; border-radius: 6px; padding: 12px 16px; font-size: 14px; color: #444; margin: 12px 0; }
+  .back-link { display: inline-flex; align-items: center; gap: 6px; color: #1a6cf0; text-decoration: none; font-size: 14px; margin-top: 40px; font-weight: 500; }
+  .back-link:hover { text-decoration: underline; }
+  @media (max-width: 768px) { .sidebar { display: none; } .main { padding: 24px 20px 60px; } .img-row { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<div class="layout">
+  <nav class="sidebar">
+    <div class="sidebar-title">Pages</div>
+    <a href="../index.html">🗺️ China Travel Guide</a>
+    <a href="policy.html">💡 Policy</a>
+    <a href="payment.html">💰 Payment</a>
+    <a href="accommodation.html">🏨 Accommodation</a>
+    <a href="transportation.html" class="active">🚅 Transportation System</a>
+    <a href="scenic.html">🏞️ Scenic spots</a>
+    <a href="others.html">🔍 Others</a>
+  </nav>
+
+  <main class="main">
+    <div class="page-header">
+      <h1>🚅 Transportation System</h1>
+      <div class="subtitle">Getting around China — trains, metro, taxis, bikes &amp; more</div>
+    </div>
+
+    <div class="hint">Click the ▶ button to show the answer</div>
+
+    <details class="faq-item">
+      <summary class="faq-question">💬 Commonly used route query and translation apps in China?</summary>
+      <div class="faq-answer">
+        <p><strong>Map apps:</strong> Baidu Map and Amap (高德地图) are the most commonly used by Chinese people. Both have English interfaces.</p>
+        <p><strong>Translation apps:</strong> Baidu Translate and Youdao are the most popular translation apps in China.</p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary class="faq-question">🚗 Can foreigners rent a car and drive by themselves in China?</summary>
+      <div class="faq-answer">
+        <p>Foreign driving licenses are generally not valid in China, so self-driving is restricted. However, international travelers can easily book ride-hailing services:</p>
+        <ol>
+          <li><strong>Via WeChat:</strong> Click on "Me" → "Services" → "Mobility" or "Ride Hailing" → enter pickup &amp; destination.</li>
+          <li><strong>Via Alipay:</strong> Click on "Transport" → "Taxi" → enter pickup &amp; destination.</li>
+          <li><strong>Via Didi App:</strong> Download "Didi-Greater China" — supports foreign phone numbers and international credit cards. Choose from Express, Taxi, Premier, or Luxe services.</li>
+        </ol>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary class="faq-question">🚄 How to book long-distance transportation?</summary>
+      <div class="faq-answer">
+        <p><strong>🚅 Train / High-speed rail:</strong></p>
+        <ul>
+          <li>Book via the 12306 official app or website (requires registration with passport number)</li>
+          <li>Alternatively, use Trip.com, Klook, or your hotel concierge</li>
+          <li>Present your passport at the ticket gate or use self-service collection machines</li>
+          <li>High-speed rail (G/D trains) connects most major cities with speeds up to 350 km/h</li>
+        </ul>
+        <p><strong>✈️ Airplane:</strong></p>
+        <ul>
+          <li>Book on Trip.com, Ctrip, or airline official websites</li>
+          <li>Arrive at the airport at least 2 hours before domestic flights</li>
+          <li>International terminals require 3 hours</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary class="faq-question">🚍 What mode of transportation is recommended for short distances?</summary>
+      <div class="faq-answer">
+        <p><strong>🚇 Metro:</strong> Fast, cheap, and air-conditioned. Available in 55+ cities. Use WeChat/Alipay or buy a Metro Card at the station.</p>
+        <p><strong>🚌 Bus:</strong> Very affordable but can be confusing without Chinese. Use maps apps for route planning. Pay with transit card or mobile payment.</p>
+        <p><strong>🚕 Online ride-hailing:</strong> Didi is the most convenient option for foreigners. English interface available.</p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary class="faq-question">🚲 Does CityWalk provide shared bicycles? How to use them?</summary>
+      <div class="faq-answer">
+        <p>Yes! Shared bikes are widely available in Chinese cities. Didi has its own shared bike service accessible directly via the Didi app.</p>
+        <p><strong>Step 1: Find a Didi bike</strong></p>
+        <ul>
+          <li>Tap on the "Bike" tab in Didi's screen menu</li>
+          <li>Nearby available Didi bikes will appear on the map</li>
+          <li>Tap "Scan to ride" and scan the QR Code on the bike to unlock and start riding</li>
+        </ul>
+        <p><strong>Step 2: End your bike journey</strong></p>
+        <ul>
+          <li>Park the bike at designated shared bike parking lots</li>
+          <li>Lock the bike to end the trip</li>
+          <li>The trip fee will be automatically deducted from your Didi account</li>
+          <li>⚠️ Do NOT park in no-parking zones — you won't be able to lock the bike or end the journey</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary class="faq-question">Ⓜ️ How do I use a public transportation card (MetroCard)?</summary>
+      <div class="faq-answer">
+        <p>A total of 55 cities in China have metro lines. Foreign travelers can:</p>
+        <ul>
+          <li><strong>Apply for a metro pass</strong> at the metro station service desk (requires passport)</li>
+          <li><strong>Use WeChat or Alipay</strong> to directly tap and pay at metro gates — no physical card needed</li>
+        </ul>
+        <img class="img-banner" src="../images/transport_metro.png" alt="MetroCard usage guide">
+      </div>
+    </details>
+
+    <details class="faq-item open" open>
+      <summary class="faq-question">🚖 Recommended taxi app — DiDi</summary>
+      <div class="faq-answer">
+        <p>DiDi (滴滴) is China's most popular ride-hailing app, similar to Uber. It now has an English version for international travelers.</p>
+        <img class="img-banner" src="../images/transport_didi.png" alt="DiDi app guide">
+        <div class="note-box">
+          💡 <strong>Tip:</strong> Download Didi before arriving in China. Register with your foreign phone number and bind an international credit card or Alipay/WeChat Pay.
+        </div>
+      </div>
+    </details>
+
+    <a class="back-link" href="../index.html">👉 Go back to China Travel Guide</a>
+  </main>
+</div>
+</body>
+</html>

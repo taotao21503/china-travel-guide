@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Policy — China Travel Guide</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f8fa; color: #2c3e50; }
+  .layout { display: flex; min-height: 100vh; }
+  .sidebar {
+    width: 240px; min-width: 240px; background: #fff; border-right: 1px solid #e8eaed;
+    padding: 20px 0; position: sticky; top: 0; height: 100vh; overflow-y: auto;
+  }
+  .sidebar-title { font-size: 13px; font-weight: 600; color: #888; text-transform: uppercase; letter-spacing: 0.5px; padding: 0 16px 12px; }
+  .sidebar a {
+    display: flex; align-items: center; gap: 8px; padding: 8px 16px;
+    color: #444; text-decoration: none; font-size: 14px; border-radius: 6px;
+    margin: 1px 8px; transition: background 0.15s;
+  }
+  .sidebar a:hover { background: #f0f4ff; color: #1a6cf0; }
+  .sidebar a.active { background: #e8f0fe; color: #1a6cf0; font-weight: 500; }
+  .main { flex: 1; max-width: 860px; padding: 48px 48px 80px; }
+  .page-header { margin-bottom: 32px; }
+  .page-header h1 { font-size: 28px; font-weight: 700; color: #1a1a2e; margin-bottom: 8px; }
+  .page-header .subtitle { font-size: 14px; color: #888; }
+  .page-img { width: 100%; border-radius: 12px; margin-bottom: 32px; box-shadow: 0 4px 20px rgba(0,0,0,0.10); display: block; }
+  .hint { background: #fff3cd; border: 1px solid #ffc107; border-radius: 8px; padding: 12px 16px; font-size: 14px; color: #856404; margin-bottom: 28px; }
+  .faq-item { background: #fff; border-radius: 10px; margin-bottom: 12px; box-shadow: 0 1px 6px rgba(0,0,0,0.06); overflow: hidden; }
+  .faq-question {
+    display: flex; align-items: center; gap: 10px; padding: 16px 20px;
+    cursor: pointer; font-size: 15px; font-weight: 500; color: #1a1a2e;
+    user-select: none; list-style: none;
+  }
+  .faq-question::after { content: '▶'; margin-left: auto; font-size: 11px; color: #aaa; transition: transform 0.2s; }
+  details[open] > .faq-question::after { transform: rotate(90deg); }
+  .faq-answer { padding: 0 20px 20px 48px; font-size: 14px; line-height: 1.8; color: #444; }
+  .faq-answer p { margin-bottom: 10px; }
+  .faq-answer ul, .faq-answer ol { padding-left: 20px; margin-bottom: 10px; }
+  .faq-answer li { margin-bottom: 6px; }
+  .faq-answer strong { color: #1a1a2e; }
+  .section-img { width: 100%; border-radius: 8px; margin: 16px 0; box-shadow: 0 2px 12px rgba(0,0,0,0.08); }
+  .back-link { display: inline-flex; align-items: center; gap: 6px; color: #1a6cf0; text-decoration: none; font-size: 14px; margin-top: 40px; font-weight: 500; }
+  .back-link:hover { text-decoration: underline; }
+  @media (max-width: 768px) { .sidebar { display: none; } .main { padding: 24px 20px 60px; } }
+</style>
+</head>
+<body>
+<div class="layout">
+  <nav class="sidebar">
+    <div class="sidebar-title">Pages</div>
+    <a href="../index.html">🗺️ China Travel Guide</a>
+    <a href="policy.html" class="active">💡 Policy</a>
+    <a href="payment.html">💰 Payment</a>
+    <a href="accommodation.html">🏨 Accommodation</a>
+    <a href="transportation.html">🚅 Transportation System</a>
+    <a href="scenic.html">🏞️ Scenic spots</a>
+    <a href="others.html">🔍 Others</a>
+  </nav>
+
+  <main class="main">
+    <div class="page-header">
+      <h1>💡 Policy</h1>
+      <div class="subtitle">Visa, entry requirements &amp; regulations</div>
+    </div>
+
+    <img class="page-img" src="../images/policy_countries.png" alt="Eligible countries for visa-free policy">
+
+    <div class="hint">Click the ▶ button to show the answer</div>
+
+    <details class="faq-item">
+      <summary class="faq-question">🆓 Which countries' citizens are eligible for the 240-hour visa-free policy?</summary>
+      <div class="faq-answer">
+        <p>He/She must be a citizen of one of the countries entitled to the 240-hour visa-free transit. Please check the table below for the list of the countries entitled.</p>
+        <img class="section-img" src="../images/policy_visa.jpeg" alt="Eligible countries list">
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary class="faq-question">📋 What are the requirements and restrictions for entering China through the 24-hour visa-free policy?</summary>
+      <div class="faq-answer">
+        <p>China has implemented a 24-hour visa-free transit policy for citizens of all other countries around the world at all its accessible exit-entry ports. Foreign nationals holding valid international travel documents and connecting tickets with confirmed seats, who intend to transit via China by international flights, ships, or trains to third countries or regions, are exempt from visa applications, provided that their stay in China will not exceed 24 hours and that they will remain within the arrival ports.</p>
+        <p>Those who plan to leave the ports must apply for temporary entry permits at the exit-entry border inspection authorities of the corresponding ports.</p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary class="faq-question">🛂 If I am not eligible for the visa exemption policy for the time being, how can I obtain a Chinese tourist visa?</summary>
+      <div class="faq-answer">
+        <p><strong>Tourist visa (L Visa)</strong> — Issued to those who intend to go to China as a tourist.</p>
+        <ul>
+          <li>Basic Documents</li>
+          <li>Supporting Documents</li>
+          <li>Application Procedure, Processing Time and Fees</li>
+          <li>Special Reminder &amp; Notes</li>
+        </ul>
+        <p>👉 If you plan to apply for a Chinese visa, please visit the China Online Visa Application (COVA) website.</p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary class="faq-question">⚓ Which ports of entry are available?</summary>
+      <div class="faq-answer">
+        <p>China has numerous designated ports of entry for international travelers, including major international airports (Beijing Capital, Shanghai Pudong, Guangzhou Baiyun, etc.), seaports, and land border crossings. Please check the official immigration authority website for the latest list of eligible ports for your specific visa-free category.</p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary class="faq-question">🎫 What should I pay attention to if I hold a connecting ticket?</summary>
+      <div class="faq-answer">
+        <ul>
+          <li>He/She must hold a valid international travel document (valid for no less than three months) that can prove his/her nationality and identity, and meet the conditions for entering a third country/region.</li>
+          <li>He/She must hold a connecting ticket to a third country/region with a confirmed date and seat for departure within 240 hours or relevant certificates as per the amount of time applied for the visa-free transit.</li>
+          <li>Fill out the Arrival Card for Temporary Entry Foreigners, and accept inquiries from the entry-exit border inspection authority.</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary class="faq-question">⏰ How to calculate the stay time under the 240-hour visa-free policy?</summary>
+      <div class="faq-answer">
+        <p>The calculation does not consider the actual time of arrival but starts counting from midnight the next day.</p>
+        <p><strong>For Example:</strong></p>
+        <ul>
+          <li><strong>Arrival:</strong> You arrive in Beijing at 2:00 PM on Jan 1, 2025.</li>
+          <li><strong>Start of 240-hour period:</strong> The clock starts at 12:00 AM on Jan 2, 2025.</li>
+          <li><strong>End of 240-hour period:</strong> You must leave by 11:59 PM on Jan 11, 2025.</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary class="faq-question">🚫 What items are restricted from being brought into the country?</summary>
+      <div class="faq-answer">
+        <ol>
+          <li>Weapons and Ammunition</li>
+          <li>Narcotics and Psychotropic Substances</li>
+          <li>Biological and Infectious Materials</li>
+          <li>Animal and Plant Products</li>
+          <li>Other Prohibited Items</li>
+        </ol>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary class="faq-question">🗓️ How to Get Your Chinese Visa Renewed?</summary>
+      <div class="faq-answer">
+        <p>After entering China, foreigners should apply for a visa renewal at the Exit &amp; Entry Administration Office of Public Security Bureau (at county level and above), if you meet one of these 4 circumstances:</p>
+        <ol>
+          <li>Change the purpose of visiting and stay</li>
+          <li>Issued a new passport (former passport will expire soon, or visa pages have been used up)</li>
+          <li>Add companions after entry</li>
+          <li>Group tourists need to stay in China separately</li>
+        </ol>
+        <p>If you fail to renew your China Visa, your current visa will become invalid, requiring you to exit and return home. Bear in mind that illegal stay would be punished.</p>
+        <p>The authority will decide whether to issue a new Chinese Visa within 7 days from the date of acceptance.</p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary class="faq-question">📝 What are the basic requirements of China Visa Renewal?</summary>
+      <div class="faq-answer">
+        <ul>
+          <li>Your valid passport (or valid international travel documents) and Chinese Visa</li>
+          <li>A completed Visa/Stay Permit/Residence Permit Application Form</li>
+          <li>You can directly fill in a paper form at the office of the local police station or PSB, or download a Word/PDF version from the official website</li>
+          <li>A recent 2-inch photo taken in the last 6 months (full face, bareheaded)</li>
+          <li>A completed Registration Form of Temporary Residence for Visitors</li>
+          <li>Other documents supporting your stay in China</li>
+        </ul>
+      </div>
+    </details>
+
+    <a class="back-link" href="../index.html">👉 Go back to China Travel Guide</a>
+  </main>
+</div>
+</body>
+</html>

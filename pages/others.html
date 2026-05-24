@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Others — China Travel Guide</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f8fa; color: #2c3e50; }
+  .layout { display: flex; min-height: 100vh; }
+  .sidebar { width: 240px; min-width: 240px; background: #fff; border-right: 1px solid #e8eaed; padding: 20px 0; position: sticky; top: 0; height: 100vh; overflow-y: auto; }
+  .sidebar-title { font-size: 13px; font-weight: 600; color: #888; text-transform: uppercase; letter-spacing: 0.5px; padding: 0 16px 12px; }
+  .sidebar a { display: flex; align-items: center; gap: 8px; padding: 8px 16px; color: #444; text-decoration: none; font-size: 14px; border-radius: 6px; margin: 1px 8px; transition: background 0.15s; }
+  .sidebar a:hover { background: #f0f4ff; color: #1a6cf0; }
+  .sidebar a.active { background: #e8f0fe; color: #1a6cf0; font-weight: 500; }
+  .main { flex: 1; max-width: 860px; padding: 48px 48px 80px; }
+  .page-header { margin-bottom: 32px; }
+  .page-header h1 { font-size: 28px; font-weight: 700; color: #1a1a2e; margin-bottom: 8px; }
+  .page-header .subtitle { font-size: 14px; color: #888; }
+  .hint { background: #fff3cd; border: 1px solid #ffc107; border-radius: 8px; padding: 12px 16px; font-size: 14px; color: #856404; margin-bottom: 28px; }
+  .faq-item { background: #fff; border-radius: 10px; margin-bottom: 12px; box-shadow: 0 1px 6px rgba(0,0,0,0.06); overflow: hidden; }
+  .faq-question { display: flex; align-items: center; gap: 10px; padding: 16px 20px; cursor: pointer; font-size: 15px; font-weight: 500; color: #1a1a2e; user-select: none; list-style: none; }
+  .faq-question::after { content: '▶'; margin-left: auto; font-size: 11px; color: #aaa; transition: transform 0.2s; }
+  details[open] > .faq-question::after { transform: rotate(90deg); }
+  .faq-answer { padding: 0 20px 20px 48px; font-size: 14px; line-height: 1.8; color: #444; }
+  .faq-answer p { margin-bottom: 10px; }
+  .faq-answer ul, .faq-answer ol { padding-left: 20px; margin-bottom: 10px; }
+  .faq-answer li { margin-bottom: 6px; }
+  .faq-answer strong { color: #1a1a2e; }
+  .img-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 16px 0; }
+  .img-row img { width: 100%; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); }
+  .emergency-box { background: #fff0f0; border: 1px solid #fca5a5; border-radius: 10px; padding: 20px 24px; margin: 28px 0; }
+  .emergency-box h3 { font-size: 16px; font-weight: 600; color: #dc2626; margin-bottom: 14px; }
+  .emergency-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+  .emergency-item { display: flex; align-items: center; gap: 10px; background: #fff; border-radius: 8px; padding: 10px 14px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+  .emergency-number { font-size: 22px; font-weight: 700; color: #dc2626; min-width: 50px; }
+  .emergency-desc { font-size: 13px; color: #444; }
+  .note-box { background: #e8f4fd; border-left: 4px solid #1a6cf0; border-radius: 6px; padding: 12px 16px; font-size: 14px; color: #444; margin: 12px 0; }
+  .warning-box { background: #fff3cd; border-left: 4px solid #ffc107; border-radius: 6px; padding: 12px 16px; font-size: 14px; color: #856404; margin: 12px 0; }
+  .back-link { display: inline-flex; align-items: center; gap: 6px; color: #1a6cf0; text-decoration: none; font-size: 14px; margin-top: 40px; font-weight: 500; }
+  .back-link:hover { text-decoration: underline; }
+  @media (max-width: 768px) { .sidebar { display: none; } .main { padding: 24px 20px 60px; } .emergency-grid { grid-template-columns: 1fr; } .img-row { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<div class="layout">
+  <nav class="sidebar">
+    <div class="sidebar-title">Pages</div>
+    <a href="../index.html">🗺️ China Travel Guide</a>
+    <a href="policy.html">💡 Policy</a>
+    <a href="payment.html">💰 Payment</a>
+    <a href="accommodation.html">🏨 Accommodation</a>
+    <a href="transportation.html">🚅 Transportation System</a>
+    <a href="scenic.html">🏞️ Scenic spots</a>
+    <a href="others.html" class="active">🔍 Others</a>
+  </nav>
+
+  <main class="main">
+    <div class="page-header">
+      <h1>🔍 Others</h1>
+      <div class="subtitle">Language, Wi-Fi, culture, local tips &amp; emergency contacts</div>
+    </div>
+
+    <div class="img-row">
+      <img src="../images/others_tips1.png" alt="Travel tips">
+      <img src="../images/others_tips2.png" alt="Local culture tips">
+    </div>
+
+    <div class="hint">Click the ▶ button to show the answer</div>
+
+    <details class="faq-item">
+      <summary class="faq-question">💬 Language</summary>
+      <div class="faq-answer">
+        <p>Chinese people would love to help you out if you need to, but the fact is that some people don't speak English. So it will help a lot to ask for directions or order dishes if you can learn some simple Chinese phrases:</p>
+        <ul>
+          <li><strong>"Nǐ hǎo" (你好)</strong> — Hello</li>
+          <li><strong>"Zài nǎ lǐ" (在哪里)</strong> — Where is it?</li>
+          <li><strong>"Xiè xiè" (谢谢)</strong> — Thank you</li>
+          <li><strong>"Duō shǎo qián" (多少钱)</strong> — How much does it cost?</li>
+          <li><strong>"Wǒ bù dǒng" (我不懂)</strong> — I don't understand</li>
+        </ul>
+        <div class="note-box">
+          📱 A good Chinese translation app is a must-have for independent travelers. Whenever you need help, show the Chinese translation to locals.
+        </div>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary class="faq-question">📶 Free Wi-Fi</summary>
+      <div class="faq-answer">
+        <p>China is a country that has embraced Wi-Fi, and you can find free Wi-Fi in most cities, public areas, hotels and restaurants.</p>
+        <ul>
+          <li>Airports, train stations, and major tourist spots typically offer free Wi-Fi</li>
+          <li>Most hotels provide free Wi-Fi in rooms and common areas</li>
+          <li>Coffee shops, restaurants, and malls often have guest Wi-Fi</li>
+          <li>Use a Wi-Fi map app or search "Wi-Fi near me" on your device</li>
+        </ul>
+        <div class="note-box">
+          💡 Note: Access to some foreign websites (Google, Facebook, etc.) may be restricted in China. Consider getting a VPN before your trip if you need access to these services.
+        </div>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary class="faq-question">🔌 Power Plugs / Sockets in China</summary>
+      <div class="faq-answer">
+        <p>The common power voltage is <strong>220 Volts, 50 Hz AC</strong>. In Taiwan, the electricity supply is 110V/60Hz.</p>
+        <p>Common plug types in China:</p>
+        <ul>
+          <li>Type A: Two flat parallel pins (same as US/Japan)</li>
+          <li>Type C: Two round pins (European standard)</li>
+          <li>Type I: Two flat angled pins (Australian standard)</li>
+        </ul>
+        <div class="warning-box">
+          ⚠️ If your devices use 110V, you will need a <strong>voltage converter</strong> in addition to a plug adapter. Most modern electronics (laptops, phones) support 110–240V and only need a plug adapter.
+        </div>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary class="faq-question">👕 Respect Local Cultures</summary>
+      <div class="faq-answer">
+        <p>There are 56 ethnic groups living in China, each with their own traditions, cultures, and habits. Please respect their cultures and religions — experiencing these things firsthand will make your trip more interesting and meaningful.</p>
+        <ul>
+          <li>When visiting a temple, wear long trousers and don't talk loudly or make jokes</li>
+          <li>Ask for permission before photographing people</li>
+          <li>Remove shoes when entering some temples or traditional homes</li>
+          <li>Avoid pointing feet at people or religious objects (considered disrespectful)</li>
+          <li>Use both hands when giving or receiving business cards or gifts</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary class="faq-question">🔄 Avoid Public Holidays</summary>
+      <div class="faq-answer">
+        <p>Spring and autumn are the best seasons to visit China, especially if you struggle with cold or hot weather. Most places in China are warm in these seasons (more rainfall in spring).</p>
+        <p>Major Chinese public holidays to be aware of:</p>
+        <ul>
+          <li><strong>Spring Festival (Chinese New Year):</strong> January/February — extremely busy, prices spike</li>
+          <li><strong>Qingming Festival:</strong> Early April</li>
+          <li><strong>Labour Day (Golden Week):</strong> May 1–5 — very busy</li>
+          <li><strong>National Day (Golden Week):</strong> October 1–7 — extremely busy, book far in advance</li>
+        </ul>
+        <p>During public holidays, flight tickets, train tickets and hotel rooms can be scarce and expensive. Plan accordingly!</p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary class="faq-question">👛 You Don't Have to Tip</summary>
+      <div class="faq-answer">
+        <p>In mainland China, tipping is generally <strong>not required</strong>, whether in hotels, restaurants, or entertainment venues. However, if the quality of service is particularly good, you may choose to give a tip as a token of appreciation.</p>
+        <p>For guides of escorted tours in China, you can tip when you think the service is excellent.</p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary class="faq-question">🗣️ Social Media Regulations</summary>
+      <div class="faq-answer">
+        <p>Foreigners must abide by the laws and regulations of China when writing comments on social media in China. Be mindful of the content you post and ensure it complies with local regulations.</p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary class="faq-question">🚫 Photography Restrictions</summary>
+      <div class="faq-answer">
+        <p>Foreigners are not allowed to photograph military installations, including buildings, sites, and facilities directly used by China for military purposes. Always follow posted signs at tourist sites regarding photography restrictions.</p>
+      </div>
+    </details>
+
+    <div class="emergency-box">
+      <h3>🆘 Emergency Numbers in China</h3>
+      <div class="emergency-grid">
+        <div class="emergency-item">
+          <span class="emergency-number">110</span>
+          <span class="emergency-desc">Police — Personal assault, property crimes, general help</span>
+        </div>
+        <div class="emergency-item">
+          <span class="emergency-number">119</span>
+          <span class="emergency-desc">Fire Department — In case of fire</span>
+        </div>
+        <div class="emergency-item">
+          <span class="emergency-number">120</span>
+          <span class="emergency-desc">Ambulance — Medical emergencies / First aid</span>
+        </div>
+        <div class="emergency-item">
+          <span class="emergency-number">122</span>
+          <span class="emergency-desc">Traffic Police — Road accidents</span>
+        </div>
+      </div>
+      <p style="margin-top: 14px; font-size: 13px; color: #666;">⚠️ In case of passport loss, report it to the local police station immediately.</p>
+    </div>
+
+    <a class="back-link" href="../index.html">👉 Go back to China Travel Guide</a>
+  </main>
+</div>
+</body>
+</html>

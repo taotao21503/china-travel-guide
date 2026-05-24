@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scenic Spots — China Travel Guide</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f8fa; color: #2c3e50; }
+  .layout { display: flex; min-height: 100vh; }
+  .sidebar { width: 240px; min-width: 240px; background: #fff; border-right: 1px solid #e8eaed; padding: 20px 0; position: sticky; top: 0; height: 100vh; overflow-y: auto; }
+  .sidebar-title { font-size: 13px; font-weight: 600; color: #888; text-transform: uppercase; letter-spacing: 0.5px; padding: 0 16px 12px; }
+  .sidebar a { display: flex; align-items: center; gap: 8px; padding: 8px 16px; color: #444; text-decoration: none; font-size: 14px; border-radius: 6px; margin: 1px 8px; transition: background 0.15s; }
+  .sidebar a:hover { background: #f0f4ff; color: #1a6cf0; }
+  .sidebar a.active { background: #e8f0fe; color: #1a6cf0; font-weight: 500; }
+  .main { flex: 1; max-width: 860px; padding: 48px 48px 80px; }
+  .page-header { margin-bottom: 32px; }
+  .page-header h1 { font-size: 28px; font-weight: 700; color: #1a1a2e; margin-bottom: 8px; }
+  .page-header .subtitle { font-size: 14px; color: #888; }
+  .hint { background: #fff3cd; border: 1px solid #ffc107; border-radius: 8px; padding: 12px 16px; font-size: 14px; color: #856404; margin-bottom: 28px; }
+  .faq-item { background: #fff; border-radius: 10px; margin-bottom: 12px; box-shadow: 0 1px 6px rgba(0,0,0,0.06); overflow: hidden; }
+  .faq-question { display: flex; align-items: center; gap: 10px; padding: 16px 20px; cursor: pointer; font-size: 15px; font-weight: 500; color: #1a1a2e; user-select: none; list-style: none; }
+  .faq-question::after { content: '▶'; margin-left: auto; font-size: 11px; color: #aaa; transition: transform 0.2s; }
+  details[open] > .faq-question::after { transform: rotate(90deg); }
+  .faq-answer { padding: 0 20px 20px 48px; font-size: 14px; line-height: 1.8; color: #444; }
+  .faq-answer p { margin-bottom: 10px; }
+  .faq-answer ul, .faq-answer ol { padding-left: 20px; margin-bottom: 10px; }
+  .faq-answer li { margin-bottom: 6px; }
+  .faq-answer strong { color: #1a1a2e; }
+  .tour-gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 24px 0; }
+  .tour-gallery img { width: 100%; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.09); display: block; aspect-ratio: 4/3; object-fit: cover; }
+  .note-box { background: #e8f4fd; border-left: 4px solid #1a6cf0; border-radius: 6px; padding: 12px 16px; font-size: 14px; color: #444; margin: 12px 0; }
+  .warning-box { background: #fff3cd; border-left: 4px solid #ffc107; border-radius: 6px; padding: 12px 16px; font-size: 14px; color: #856404; margin: 12px 0; }
+  .back-link { display: inline-flex; align-items: center; gap: 6px; color: #1a6cf0; text-decoration: none; font-size: 14px; margin-top: 40px; font-weight: 500; }
+  .back-link:hover { text-decoration: underline; }
+  @media (max-width: 768px) { .sidebar { display: none; } .main { padding: 24px 20px 60px; } .tour-gallery { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<div class="layout">
+  <nav class="sidebar">
+    <div class="sidebar-title">Pages</div>
+    <a href="../index.html">🗺️ China Travel Guide</a>
+    <a href="policy.html">💡 Policy</a>
+    <a href="payment.html">💰 Payment</a>
+    <a href="accommodation.html">🏨 Accommodation</a>
+    <a href="transportation.html">🚅 Transportation System</a>
+    <a href="scenic.html" class="active">🏞️ Scenic spots</a>
+    <a href="others.html">🔍 Others</a>
+  </nav>
+
+  <main class="main">
+    <div class="page-header">
+      <h1>🏞️ Scenic Spots</h1>
+      <div class="subtitle">How to book tickets and visit China's attractions</div>
+    </div>
+
+    <div class="tour-gallery">
+      <img src="../images/scenic_tours1.png" alt="China Tours">
+      <img src="../images/scenic_tours2.png" alt="China Tours">
+      <img src="../images/scenic_tours3.png" alt="China Tours">
+    </div>
+
+    <div class="hint">Click the ▶ button to show the answer</div>
+
+    <details class="faq-item">
+      <summary class="faq-question">🎫 How to Reserve Tickets in China?</summary>
+      <div class="faq-answer">
+        <ul>
+          <li>International visitors are required to provide <strong>passport numbers</strong> during the online booking process.</li>
+          <li>Visitors must bring the <strong>original valid identification</strong> used to book their tickets for check-in.</li>
+        </ul>
+        <p><strong>Booking Platforms:</strong></p>
+        <ul>
+          <li>WeChat and Alipay official mini-programs</li>
+          <li>Third-party apps (Klook, Trip.com, GetYourGuide)</li>
+          <li>Official booking websites of specific attractions</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary class="faq-question">👥 Can I buy a ticket at site instead of booking in advance?</summary>
+      <div class="faq-answer">
+        <p>Yes, you can. However, you may encounter several difficulties:</p>
+        <ul>
+          <li><strong>Language barrier:</strong> Many staff may not speak English at on-site ticket booths.</li>
+          <li><strong>Long queues:</strong> Very common at popular attractions, especially during Chinese public holidays.</li>
+          <li><strong>Limited tickets:</strong> Many scenic areas limit the number of on-site tickets sold per day — if you arrive late, tickets may not be available.</li>
+        </ul>
+        <div class="warning-box">
+          ⚠️ We strongly recommend booking tickets online in advance to guarantee a smooth trip.
+        </div>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary class="faq-question">🖇️ How far in advance should I book a ticket?</summary>
+      <div class="faq-answer">
+        <p>After mapping out your China travel itinerary, you can start booking admission tickets:</p>
+        <ul>
+          <li>Most scenic areas in China <strong>release tickets 7 days</strong> before the entry date.</li>
+          <li>Try to secure tickets as soon as they're available for popular attractions.</li>
+          <li>The <strong>latest</strong> you can usually book is the day before your intended visit.</li>
+        </ul>
+        <div class="note-box">
+          💡 For top attractions like the Forbidden City in Beijing, tickets can sell out weeks in advance. Book as early as possible!
+        </div>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary class="faq-question">📲 How do I make a ticket order online and get a confirmation?</summary>
+      <div class="faq-answer">
+        <ol>
+          <li>Submit the order on the booking website/app and complete payment.</li>
+          <li>Upon receiving your order, the platform will handle it immediately.</li>
+          <li>A confirmation email will be sent to you.</li>
+          <li>Click the "Check Order" link in the email to view your Confirmation Number or QR Code.</li>
+          <li>Review the terms for "How to Use" in your confirmation.</li>
+        </ol>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary class="faq-question">📄 Do I need to redeem a paper ticket after booking online?</summary>
+      <div class="faq-answer">
+        <p>The process varies across different scenic areas:</p>
+        <ul>
+          <li><strong>Direct entry:</strong> Some scenic areas allow you to simply have your passport or QR code scanned at the gate — no paper ticket needed.</li>
+          <li><strong>Paper ticket required:</strong> Some attractions require you to collect a paper ticket at the ticket window using your QR code, Confirmation Number, or passport.</li>
+        </ul>
+        <p>Always check the specific instructions in your booking confirmation for the attraction you're visiting.</p>
+      </div>
+    </details>
+
+    <a class="back-link" href="../index.html">👉 Go back to China Travel Guide</a>
+  </main>
+</div>
+</body>
+</html>
